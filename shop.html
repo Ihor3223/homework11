@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LA Shop</title>
-    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="./css/shop.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap"
       rel="stylesheet"
@@ -16,34 +16,32 @@
     <div class="container">
       <header class="header">
         <div class="h1">
-          <h1 class="logo">LOGO</h1>
-          <h1 class="logo1">AUTO</h1>
+          <h1 class="logo"><a class="logo" href="./index.html">LOGO</a></h1>
+          <h1 class="logo1"><a class="" href="./index.html">AUTO</a></h1>
         </div>
         <ul class="menu">
           <li class="list">
             <a class="list_link" href="./index.html">Home</a>
           </li>
           <li class="list">
-            <a class="list_link" href="https://www.youtube.com/">About us</a>
+            <a class="list_link" href="#">About us</a>
           </li>
           <li class="list">
-            <a class="list_link" href="https://www.youtube.com/">Shop</a>
+            <a class="list_link" href="./shop.html">Shop</a>
           </li>
           <li class="list">
-            <a class="list_link" href="https://www.youtube.com/">Blog</a>
+            <a class="list_link" href="#">Blog</a>
           </li>
           <li class="list">
-            <a class="list_link" href="https://www.youtube.com/">Contacts</a>
+            <a class="list_link" href="#">Contacts</a>
           </li>
           <li class="list">
-            <a class="list_link" href="https://www.youtube.com/"
-              >How it Works</a
-            >
+            <a class="list_link" href="#">How it Works</a>
           </li>
         </ul>
         <div class="window">
-          <div class="login">Login</div>
-          <div class="register">Register</div>
+          <a href="./login.html" class="login">Login</a>
+          <a href="./registration.html" class="register">Register</a>
         </div>
       </header>
     </div>
@@ -51,48 +49,94 @@
     <div class="brands">
       <div>
         <div class="brands_border">
-          <h2 class="brands__title">Brands</h2>
+          <ul class="accordion">
+            <li class="accordion__item">
+              <input type="checkbox" name="fff" class="accordion_checkbox" />
+              <div class="accord_price">
+                <h2 class="price_accord">Price</h2>
+                <p>&#9660;</p>
+              </div>
+              <div class="accordion__content block">
+                <div class="accordion_content_price">
+                  <p>min</p>
 
-          <ul class="contact_list">
-            <li>
-              <a href="#">&rsaquo;Audi</a>
-              <span class="contact_list-count">(9)</span>
+                  <p>min</p>
+                </div>
+                <div class="accordion_content_price">
+                  <input class="price_border" placeholder="0" />
+
+                  <input class="price_border" placeholder="0" />
+                </div>
+              </div>
             </li>
-            <li>
-              <a href="#">&rsaquo;Ford</a>
-              <span class="contact_list-count">(3)</span>
-            </li>
-            <li>
-              <a href="#">&rsaquo;Bugatti</a>
-              <span class="contact_list-count">(1)</span>
-            </li>
-            <li>
-              <a href="#">&rsaquo;Subaru</a>
-              <span class="contact_list-count">(10)</span>
-            </li>
-            <li>
-              <a href="#">&rsaquo;Nissan</a>
-              <span class="contact_list-count">(3)</span>
-            </li>
-            <li class="color_brand">
-              <a href="#">&rsaquo;Volkswagen</a>
-              <span>(0)</span>
-            </li>
-            <li class="color_brand">
-              <a href="#">&rsaquo;Fiat</a>
-              <span>(0)</span>
+
+            <li class="accordion__item">
+              <input type="checkbox" name="fff" class="accordion_checkbox" />
+              <div class="accord_price">
+                <h2 class="price_accord">Brands</h2>
+                <p class="arrow">&#9660;</p>
+              </div>
+
+              <div class="accordion__content">
+                <div>
+                  <input type="checkbox" />
+                  <a class="brand_color" href="#">Audi</a>
+                </div>
+
+                <span class="contact_list-count">(9)</span>
+              </div>
+              <div class="accordion__content">
+                <div>
+                  <input type="checkbox" />
+                  <a class="brand_color" href="#">Mecedes-Benz</a>
+                </div>
+                <span class="contact_list-count">(9)</span>
+              </div>
+              <div class="accordion__content">
+                <div>
+                  <input type="checkbox" />
+                  <a class="brand_color" href="#">Subaru</a>
+                </div>
+                <span class="contact_list-count">(9)</span>
+              </div>
+              <div class="accordion__content">
+                <div>
+                  <input type="checkbox" />
+                  <a class="brand_color" href="#">Honda</a>
+                </div>
+                <span class="contact_list-count">(9)</span>
+              </div>
+              <div class="accordion__content">
+                <div>
+                  <input type="checkbox" />
+                  <a class="brand_color" href="#">Bugatti</a>
+                </div>
+                <span class="contact_list-count">(9)</span>
+              </div>
+              <div>
+                <h2 class="price_accord">Search</h2>
+                <input class="search" placeholder="Search by name..." />
+              </div>
             </li>
           </ul>
-
-          <div class="contact_list">
-            <h2>Contacts Details</h2>
-            <p>
-              Phone:879-332-9375<br /><br />Email:info@pixsellz.io<br /><br />Adress:456
-              Hagenes Gardens Suite 808
-            </p>
+        </div>
+        <div class="contact_list">
+          <h3>Contacts Details</h3>
+          <div class="click_contact">
+            <h2 class="phone_click">Phone:</h2>
+            879-332-9375<br /><br />
+          </div>
+          <div class="click_contact">
+            <h3 class="phone_click">Email:</h3>
+            info@pixsellz.io<br /><br />
+          </div>
+          <div class="click_contact">
+            <h3 class="phone_click">Adress:</h3>
+            456 Hagenes Gardens Suite 808
           </div>
         </div>
       </div>
+
       <div class="block_shop">
         <h1 class="shop">Our Shop</h1>
         <div class="block">

@@ -5,12 +5,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: #84878d;
-}
-a:active {
-  color: #84878d;
-}
 body {
   font-family: "Rajdhani", sans-serif;
   margin: 0;
@@ -22,6 +16,13 @@ p {
 li {
   list-style: none;
 }
+
+.scroll {
+  position: fixed;
+
+  background: white;
+}
+
 .container {
   margin: auto;
 }
@@ -35,9 +36,11 @@ li {
 }
 .logo {
   color: #171717;
+  cursor: pointer;
 }
 .logo1 {
   color: #ff2e63;
+  cursor: pointer;
 }
 .login {
   cursor: pointer;
@@ -57,6 +60,7 @@ li {
 
 .list_link {
   padding: 5px 10px;
+  color: #000000;
 }
 
 .list_link:hover {
@@ -69,7 +73,7 @@ li {
   cursor: pointer;
 
   font-size: large;
-  color: azure;
+  color: azure !important;
   border-radius: 5px;
   background-color: #ff2e63;
   height: 40px;
@@ -79,7 +83,7 @@ li {
 }
 .register:hover {
   background: #f8f3ef;
-  color: #635155;
+  color: #ffffff;
   transition-duration: 1s;
 }
 
@@ -388,4 +392,108 @@ li {
 
 .logo_foot {
   color: #ffffff;
+}
+
+.search {
+  border: solid 1px #999999;
+  border-radius: 5px;
+  width: 230px;
+  height: 35px;
+}
+.search::placeholder {
+  color: #999999;
+  font-size: 15px;
+}
+
+.price_border {
+  border: solid 1px #999999;
+  border-radius: 5px;
+  width: 101px;
+  height: 35px;
+}
+.price_border::placeholder {
+  color: #999999;
+  font-size: 15px;
+}
+
+.accordion {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion__item {
+  position: relative;
+}
+
+.accordion__content {
+  margin: 0;
+  display: none;
+  overflow: hidden;
+}
+.accordion_checkbox:checked ~ .accordion__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.accordion_checkbox:checked ~ .arrow {
+  display: none !important;
+}
+
+.accordion_checkbox {
+  width: 100%;
+  height: 2em;
+  font-size: 1.5em;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.accord_price {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
+}
+.price_accord {
+  margin: 0;
+}
+.accordion_content_price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #999999;
+}
+.accordion_content_price > p {
+  width: 35%;
+}
+.brand_color {
+  color: black;
+}
+.brand_color:hover {
+  text-decoration: underline;
+  color: #ff2e63;
+  transition-duration: 0.5s;
+}
+.click_contact {
+  display: flex;
+  align-items: baseline;
+}
+.phone_click {
+  cursor: pointer;
+  margin: 0;
+}
+
+.block_reg {
+  border: solid 1px #999999;
+  border-radius: 5px;
+  width: 230px;
+  height: 35px;
+}
+.first_name::placeholder {
+  color: #999999;
+  font-size: 15px;
 }
