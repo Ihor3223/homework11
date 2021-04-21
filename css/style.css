@@ -34,6 +34,12 @@ p {
   color: #ff2e63;
   cursor: pointer;
 }
+.logo3 {
+  color: #ff2e63;
+}
+.logo4 {
+  color: white;
+}
 .login {
   cursor: pointer;
   font-size: large;
@@ -52,6 +58,7 @@ p {
 
 .list_link {
   padding: 5px 10px;
+  color: black;
 }
 
 .list_link:hover {
@@ -64,7 +71,7 @@ p {
   cursor: pointer;
 
   font-size: large;
-  color: azure;
+  color: azure !;
   border-radius: 5px;
   background-color: #ff2e63;
   height: 40px;
