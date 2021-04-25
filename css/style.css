@@ -245,6 +245,15 @@ p {
   font-weight: 600;
   display: flex;
   justify-content: space-between;
+
+  margin: auto;
+}
+.title1 {
+  font-size: 35px;
+  color: #171717;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
   width: 80%;
   margin: auto;
 }
