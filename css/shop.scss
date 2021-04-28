@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 a {
   text-decoration: none;
 }
@@ -10,7 +9,6 @@ body {
   font-family: "Rajdhani", sans-serif;
   margin: 0;
 }
-
 p {
   margin: 0;
 }
@@ -23,7 +21,6 @@ li {
   width: 20px;
   height: 20px;
 }
-
 .up_svg {
   width: 20px;
   height: 20px;
@@ -37,26 +34,21 @@ li {
 .container {
   margin: auto;
 }
-
 .h1 {
   display: flex;
 }
-
 .window {
   display: flex;
   align-items: center;
 }
-
 .logo {
   color: #171717;
   cursor: pointer;
 }
-
 .logo1 {
   color: #ff2e63;
   cursor: pointer;
 }
-
 .login {
   cursor: pointer;
   font-size: large;
@@ -67,7 +59,6 @@ li {
   width: 110px;
   padding: 10px 20px;
 }
-
 .login:hover {
   text-decoration: underline;
   color: #ff2e63;
@@ -87,6 +78,7 @@ li {
 
 .register {
   cursor: pointer;
+
   font-size: large;
   color: azure;
   border-radius: 5px;
@@ -96,7 +88,6 @@ li {
   text-align: center;
   padding-top: 10px;
 }
-
 .register:hover {
   background: #f8f3ef;
   color: #ff2e63;
@@ -106,7 +97,6 @@ li {
 .container {
   margin: auto;
 }
-
 .header {
   margin: auto;
   max-width: 60%;
@@ -115,7 +105,6 @@ li {
   justify-content: space-between;
   padding-top: 0;
 }
-
 .menu {
   display: flex;
   align-items: center;
@@ -130,19 +119,16 @@ li {
   list-style: none;
   font-size: large;
 }
-
 .h2 {
   margin: 0;
   font-size: 45px;
   color: #171717;
 }
-
 .h22 {
   margin: 0;
   font-size: 45px;
   color: #ff2e63;
 }
-
 .block {
   display: flex;
   align-items: center;
@@ -159,12 +145,10 @@ li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
 }
-
 .block1:hover {
   background: #e5e5e5;
   transition-duration: 0.5s;
 }
-
 .block_size {
   display: flex;
   align-items: center;
@@ -178,17 +162,14 @@ li {
   font-size: 24px;
   width: auto;
 }
-
 .block_text_fix {
   color: #171717 !important;
 }
-
 .price {
   margin: 0 7px 0 0;
   color: #ff2e63;
   font-size: 30px;
 }
-
 .price_fix {
   color: #171717;
 }
@@ -199,7 +180,6 @@ li {
   text-decoration: line-through;
   color: #999999;
 }
-
 .block_price {
   display: flex;
   align-items: baseline;
@@ -213,13 +193,11 @@ li {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .block_img {
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
   object-fit: cover;
 }
-
 .brands_border {
   top: 0;
   list-style: none;
@@ -229,6 +207,7 @@ li {
   flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   height: auto;
+
   padding: 15px;
 }
 
@@ -247,12 +226,10 @@ li {
   margin: auto;
   font-size: xxx-large;
 }
-
 .block_shop {
   margin-left: 50px;
   min-width: 800px;
 }
-
 .button_read {
   text-align: center;
   cursor: pointer;
@@ -266,22 +243,18 @@ li {
   height: 40px;
   pad: 10 10 0 0;
 }
-
 .button_read:hover {
   background: #346cd9;
   transition-duration: 0.5s;
 }
-
 .shop_price {
   color: black;
 }
-
 .price_fix {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-
 .contact_list {
   padding: 0;
 }
@@ -297,7 +270,6 @@ li {
   padding: 10px 0;
   color: #343434 !important;
 }
-
 .contact_list > li > a {
   color: #343434 !important;
 }
@@ -328,26 +300,22 @@ li {
   height: 45px;
   width: 170px;
 }
-
 .button_foot:hover {
   background: #ff2e63;
   color: #fff;
   border-color: #ff2e63;
   transition-duration: 0.7s;
 }
-
 .page {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .num {
   font-size: larger;
   padding: 20px;
 }
-
 .num:hover {
   cursor: pointer;
   text-decoration: underline;
@@ -382,7 +350,6 @@ li {
   list-style: none;
   margin-right: 3px;
 }
-
 #pagination-digg a {
   margin-right: 2px;
 }
@@ -400,7 +367,6 @@ li {
   padding: 3px 6px;
   text-decoration: none;
 }
-
 .footer {
   width: 100%;
   margin: auto;
@@ -468,7 +434,6 @@ li {
   width: 101px;
   height: 35px;
 }
-
 .price_border::placeholder {
   color: #999999;
   font-size: 15px;
@@ -489,13 +454,11 @@ li {
   display: none;
   overflow: hidden;
 }
-
 .accordion_checkbox:checked ~ .accordion__content {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
 }
-
 .accordion_checkbox:checked ~ .arrow {
   display: none !important;
 }
@@ -518,37 +481,30 @@ li {
   margin: 0;
   align-items: center;
 }
-
 .price_accord {
   margin: 0;
 }
-
 .accordion_content_price {
   width: 100%;
   display: flex;
   justify-content: space-between;
   color: #999999;
 }
-
 .accordion_content_price > p {
   width: 35%;
 }
-
 .brand_color {
   color: black;
 }
-
 .brand_color:hover {
   text-decoration: underline;
   color: #ff2e63;
   transition-duration: 0.5s;
 }
-
 .click_contact {
   display: flex;
   align-items: baseline;
 }
-
 .phone_click {
   cursor: pointer;
   margin: 0;
@@ -560,7 +516,6 @@ li {
   width: 230px;
   height: 35px;
 }
-
 .first_name::placeholder {
   color: #999999;
   font-size: 15px;
