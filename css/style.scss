@@ -1,3 +1,9 @@
+$mobile: 400px;
+$tablet: 769px;
+$laptop: 1025px;
+$laptopL: 1441px;
+$laptopXL: 1921px;
+
 * {
   box-sizing: border-box;
 }
@@ -18,6 +24,7 @@ p {
 }
 .container {
   margin: auto;
+  width: 80%;
 }
 .h1 {
   display: flex;
@@ -26,14 +33,25 @@ p {
   display: flex;
   align-items: center;
 }
-.logo {
+
+.mains {
+  font-size: 30px;
   color: #171717;
-  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    color: #171717;
+    cursor: pointer;
+  }
+  &__logo1 {
+    color: #ff2e63;
+    cursor: pointer;
+    width: 100%;
+  }
 }
-.logo1 {
-  color: #ff2e63;
-  cursor: pointer;
-}
+
 .logo3 {
   color: #ff2e63;
 }
@@ -49,7 +67,7 @@ p {
   font-size: large;
   color: #ff2e63;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #f4f4f4;
   height: 40px;
   width: 110px;
   padding-top: 10px;
@@ -91,20 +109,18 @@ p {
   margin: auto;
 }
 
-.header {
-  margin: auto;
-  max-width: 70%;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
 .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  width: 50%;
+  width: 60%;
+
+  @media screen and (max-width: $laptop) {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
 }
 
 .list {
@@ -124,7 +140,7 @@ p {
   color: #ff2e63;
 }
 .main {
-  width: 70%;
+  width: 60%;
   display: flex;
   align-items: center;
   min-height: calc(70vh - 12rem);
@@ -139,7 +155,22 @@ p {
   position: absolute;
   z-index: -1;
   right: 0;
+
+  &__adapt {
+    width: 100%;
+  }
+
+  @media screen and( max-width:$laptop) {
+    width: 40%;
+  }
+  @media screen and( max-width:$mobile) {
+    width: 50%;
+  }
+  @media screen and( max-width:$laptopL) {
+    width: 50%;
+  }
 }
+
 .ellipse {
   margin-right: 25%;
   padding-top: 100px;
@@ -149,6 +180,12 @@ p {
   position: absolute;
   z-index: -2;
   right: 0;
+
+  @media screen and (max-width: $laptop) {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .text {
@@ -179,8 +216,18 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 70%;
+  max-width: 60%;
   margin: 60px auto;
+
+  @media screen and (max-width: $laptop) {
+    flex-wrap: wrap;
+
+    max-width: 70%;
+  }
+  @media screen and (max-width: $tablet) {
+    flex-wrap: wrap;
+    max-width: 60%;
+  }
 }
 
 .block1 {
@@ -190,6 +237,15 @@ p {
   flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   justify-content: flex-start;
+
+  @media screen and (max-width: $laptop) {
+    width: 45%;
+    margin: 10px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+  }
 }
 
 .block1__available {
@@ -252,7 +308,7 @@ p {
 }
 
 .title {
-  font-size: 35px;
+  font-size: 15px;
   color: #171717;
   font-weight: 600;
   display: flex;
@@ -264,7 +320,7 @@ p {
   font-weight: 600;
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 
@@ -306,21 +362,38 @@ p {
 }
 
 .block2 {
-  max-width: 70%;
+  max-width: 60%;
   margin: auto;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   padding-bottom: 70px;
+  @media screen and (max-width: $laptop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .block2_text {
   margin: auto;
   text-align: center;
+  padding: 20px;
 }
 
 .block2__arrow {
   margin-top: 25px;
+
+  @media screen and (max-width: $laptop) {
+    display: none;
+  }
+}
+.block2__arrow_down {
+  margin-top: 25px;
+  display: none;
+
+  @media screen and (max-width: $laptop) {
+    display: block;
+  }
 }
 
 .block2__image {
@@ -342,8 +415,18 @@ p {
     rgba(211, 223, 255, 1) 0%,
     rgba(255, 255, 255, 1) 100%
   );
-  width: 70%;
+  width: 60%;
   justify-content: space-between;
+
+  @media screen and(max-width:$laptop) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+  }
+
+  @media screen and (max-width: $laptopL) {
+    max-width: 60%;
+  }
 }
 
 .block4__wrap {
@@ -353,26 +436,41 @@ p {
   text-align: center;
   font-size: larger;
   font-style: italic;
+
+  @media screen and (max-width: $laptop) {
+    width: 100%;
+  }
 }
 
 .block4__wrap-text {
   width: 100%;
 }
-
 .block4__wrap-image {
   margin-bottom: -6px;
+
+  & > img {
+    @media screen and(max-width: $laptopL  ) {
+      max-width: 100%;
+    }
+  }
 }
 
 .block5 {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  width: 70%;
+  width: 60%;
   margin: 40px auto;
+
+  @media screen and (max-width: $laptop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .block5_header {
   margin-bottom: 40px;
-  max-width: 85%;
+  max-width: 80%;
   margin-left: auto;
   font-size: 45px;
 }
@@ -395,6 +493,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
+  @media screen and (max-width: 1025px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer_wrap {
@@ -402,6 +505,12 @@ p {
   margin: auto;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 1025px) {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .list_link_footer {

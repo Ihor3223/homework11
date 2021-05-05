@@ -7,6 +7,7 @@
     <title>LA Shop</title>
     <link rel="stylesheet" href="./css/shop.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/header.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap"
       rel="stylesheet"
@@ -24,35 +25,31 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="h1">
-          <h1 class="logo"><a class="logo" href="./index.html">LOGO</a></h1>
-          <h1 class="logo1"><a class="logo1" href="./index.html">AUTO</a></h1>
+        <div class="mains">
+          <a href="" class="mains__logo">LOGO</a>
+          <a href="" class="mains__logo mains__logo1">Auto</a>
         </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
 
         <ul class="menu">
-          <li class="list">
-            <a class="list_link" href="./index.html">Home</a>
-          </li>
-          <li class="list">
-            <a class="list_link" href="#">About us</a>
-          </li>
-          <li class="list">
-            <a class="list_link" href="./shop.html">Shop</a>
-          </li>
-          <li class="list">
-            <a class="list_link" href="#">Blog</a>
-          </li>
-          <li class="list">
-            <a class="list_link" href="#">Contacts</a>
-          </li>
-          <li class="list">
-            <a class="list_link" href="#">How it Works</a>
-          </li>
-        </ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="./shop.html">Shop</a></li>
 
+          <li><a href="#contact">Blog</a></li>
+          <li><a href="#contact">Contacts</a></li>
+          <li><a href="#contact">How it Works</a></li>
+        </ul>
         <div class="window">
-          <a href="./login.html" class="login">Login</a>
-          <a href="./registration.html" class="register">Register</a>
+          <div class="login">
+            <a class="logo3" href="./login.html">Login</a>
+          </div>
+          <div class="register">
+            <a class="logo4" href="./registration.html">Register</a>
+          </div>
         </div>
       </header>
 
@@ -85,10 +82,16 @@
                 <div class="accord_price">
                   <h2 class="price_accord">Brands</h2>
                   <svg class="up_svg">
-                    <use xlink:href=" ./svg/up.svg#icon-sort-asc"></use>
+                    <use
+                      class="up_svg"
+                      xlink:href=" ./svg/up.svg#icon-sort-asc"
+                    ></use>
                   </svg>
                   <svg class="down_svg">
-                    <use xlink:href="./svg/down.svg#icon-sort-desc"></use>
+                    <use
+                      class="down_svg"
+                      xlink:href="./svg/down.svg#icon-sort-desc"
+                    ></use>
                   </svg>
                 </div>
 
